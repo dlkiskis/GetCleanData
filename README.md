@@ -1,24 +1,24 @@
-==================================================================
-Coursera Getting and Cleaning Data Final Project
-==================================================================
+
+# Coursera Getting and Cleaning Data Final Project
+## Summary
 
 This respository contains files that modify the UCI HAR dataset to produce a tidy dataset containing only the averages of the 
 measures corresponding to means and standard deviations of all measures.
 
+To run this script, you must download the dataset at https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+and uncompress it into the working directory. 
 
 
-The dataset includes the following files:
-=========================================
+## The dataset includes the following files:
+
 
 - 'README.md' : This file.
 
-- 'getdata%2Fprojectfiles%2FUCI HAR Dataset.zip' : ZIP file containing the original UCI HAR dataset.  This file must be uncompressed into the working directory.  
-
-- 'run_analysis.R': R script that transforms the UCI HAR dataset into the tidy dataset.  It assumes the UCI HAR dataset has been uncompressed to create the folder "UCI HAR Dataset" in the working directory.  This script creates a folder called "tidydata" which contains the tidy dataset (tidydata.txt).
+- 'run_analysis.R': R script that transforms the UCI HAR dataset into the tidy dataset.  It assumes the UCI HAR dataset has been uncompressed to create the folder "UCI HAR Dataset" in the working directory.  This script creates a folder called - "tidydata" which contains the tidy dataset (tidydata.txt).
 
 
-Data transformations:
-======
+## Data transformations:
+
 Please refer to the README.txt in the UCI HAR Dataset directory for complete details of the original dataset.  
 
 The files ./UCI HAR Dataset/test/X_test.txt and ./UCI HAR Dataset/train/X_train.txt were concatenated (row-wise) in that order to combine the test and training data into one dataset.
@@ -37,76 +37,76 @@ The subject list, descriptive activity list, and extracted mean and std data wer
 
 Code Book for tidydata.txt:
 =======
-"subject": integer value corresponding to the test subject
-"activity"" : descriptive text for activity performed for the measurement
+- "subject": integer value corresponding to the test subject
+- "activity"" : descriptive text for activity performed for the measurement
 
 The following variables are the average values for all measures from a given subject-activity pair.  See description below.
-"tbodyaccmeanx" 
-"tbodyaccmeany" 
-"tbodyaccmeanz" 
-"tbodyaccstdx" 
-"tbodyaccstdy" 
-"tbodyaccstdz" 
-"tgravityaccmeanx" 
-"tgravityaccmeany" 
-"tgravityaccmeanz" 
-"tgravityaccstdx" 
-"tgravityaccstdy" 
-"tgravityaccstdz" 
-"tbodyaccjerkmeanx" 
-"tbodyaccjerkmeany" 
-"tbodyaccjerkmeanz" 
-"tbodyaccjerkstdx" 
-"tbodyaccjerkstdy" 
-"tbodyaccjerkstdz" 
-"tbodygyromeanx" 
-"tbodygyromeany" 
-"tbodygyromeanz" 
-"tbodygyrostdx" 
-"tbodygyrostdy" 
-"tbodygyrostdz" 
-"tbodygyrojerkmeanx" 
-"tbodygyrojerkmeany" 
-"tbodygyrojerkmeanz" 
-"tbodygyrojerkstdx" 
-"tbodygyrojerkstdy" 
-"tbodygyrojerkstdz" 
-"tbodyaccmagmean" 
-"tbodyaccmagstd" 
-"tgravityaccmagmean" 
-"tgravityaccmagstd" 
-"tbodyaccjerkmagmean" 
-"tbodyaccjerkmagstd"
-"tbodygyromagmean" 
-"tbodygyromagstd" 
-"tbodygyrojerkmagmean" 
-"tbodygyrojerkmagstd" 
-"fbodyaccmeanx" 
-"fbodyaccmeany" 
-"fbodyaccmeanz" 
-"fbodyaccstdx" 
-"fbodyaccstdy" 
-"fbodyaccstdz" 
-"fbodyaccjerkmeanx" 
-"fbodyaccjerkmeany" 
-"fbodyaccjerkmeanz" 
-"fbodyaccjerkstdx" 
-"fbodyaccjerkstdy" 
-"fbodyaccjerkstdz" 
-"fbodygyromeanx" 
-"fbodygyromeany" 
-"fbodygyromeanz" 
-"fbodygyrostdx" 
-"fbodygyrostdy" 
-"fbodygyrostdz" 
-"fbodyaccmagmean" 
-"fbodyaccmagstd" 
-"fbodybodyaccjerkmagmean" 
-"fbodybodyaccjerkmagstd" 
-"fbodybodygyromagmean" 
-"fbodybodygyromagstd" 
-"fbodybodygyrojerkmagmean" 
-"fbodybodygyrojerkmagstd"
+- "tbodyaccmeanx" 
+- "tbodyaccmeany" 
+- "tbodyaccmeanz" 
+- "tbodyaccstdx" 
+- "tbodyaccstdy" 
+- "tbodyaccstdz" 
+- "tgravityaccmeanx" 
+- "tgravityaccmeany" 
+- "tgravityaccmeanz" 
+- "tgravityaccstdx" 
+- "tgravityaccstdy" 
+- "tgravityaccstdz" 
+- "tbodyaccjerkmeanx" 
+- "tbodyaccjerkmeany" 
+- "tbodyaccjerkmeanz" 
+- "tbodyaccjerkstdx" 
+- "tbodyaccjerkstdy" 
+- "tbodyaccjerkstdz" 
+- "tbodygyromeanx" 
+- "tbodygyromeany" 
+- "tbodygyromeanz" 
+- "tbodygyrostdx" 
+- "tbodygyrostdy" 
+- "tbodygyrostdz" 
+- "tbodygyrojerkmeanx" 
+- "tbodygyrojerkmeany" 
+- "tbodygyrojerkmeanz" 
+- "tbodygyrojerkstdx" 
+- "tbodygyrojerkstdy" 
+- "tbodygyrojerkstdz" 
+- "tbodyaccmagmean" 
+- "tbodyaccmagstd" 
+- "tgravityaccmagmean" 
+- "tgravityaccmagstd" 
+- "tbodyaccjerkmagmean" 
+- "tbodyaccjerkmagstd"
+- "tbodygyromagmean" 
+- "tbodygyromagstd" 
+- "tbodygyrojerkmagmean" 
+- "tbodygyrojerkmagstd" 
+- "fbodyaccmeanx" 
+- "fbodyaccmeany" 
+- "fbodyaccmeanz" 
+- "fbodyaccstdx" 
+- "fbodyaccstdy" 
+- "fbodyaccstdz" 
+- "fbodyaccjerkmeanx" 
+- "fbodyaccjerkmeany" 
+- "fbodyaccjerkmeanz" 
+- "fbodyaccjerkstdx" 
+- "fbodyaccjerkstdy" 
+- "fbodyaccjerkstdz" 
+- "fbodygyromeanx" 
+- "fbodygyromeany" 
+- "fbodygyromeanz" 
+- "fbodygyrostdx" 
+- "fbodygyrostdy" 
+- "fbodygyrostdz" 
+- "fbodyaccmagmean" 
+- "fbodyaccmagstd" 
+- "fbodybodyaccjerkmagmean" 
+- "fbodybodyaccjerkmagstd" 
+- "fbodybodygyromagmean" 
+- "fbodybodygyromagstd" 
+- "fbodybodygyrojerkmagmean" 
+- "fbodybodygyrojerkmagstd"
 
 Description of data from features_info.txt
 
