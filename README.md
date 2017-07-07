@@ -35,8 +35,8 @@ Activity values from the y_test.txt and y_train.txt files were replaced with the
 
 The subject list, descriptive activity list, and extracted mean and std data were combined to form a complete dataset.  Each variable was then averaged across subject and activity to produce the final dataset.
 
-Code Book for tidydata.txt:
-=======
+## Code Book for tidydata.txt:
+
 - "subject": integer value corresponding to the test subject
 - "activity"" : descriptive text for activity performed for the measurement
 
